@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(40, 40, 49);
+    padding: 0px;
+    margin: 0px;
+    color: white;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .enterDiv {
+    margin-left: 0%;
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ButtonResetSubmit button {
+    border-radius: 6px;
+    margin: 2px;
+    width: 65px;
+    flex-wrap: wrap;
+  }
+  button:hover {
+    color: blue;
+  }
+  
