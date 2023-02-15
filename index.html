@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Test main</title>
+    <title>HW 10 Registration Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>SIGN IN</h1>
     <div class="enterDiv">
       <form method="GET">
-        <input type="text" placeholder="Enter your login" 
+        <input type="text" placeholder="Enter your login" name="Enter your login"
         minlength="1"/>
         <input
           type="password"
+          name="password"
           placeholder="Enter your password"
           minlength="5"
           maxlength="8"
@@ -22,20 +23,59 @@
         />
       <div class="ButtonResetSubmit">
           <button type="reset">Reset</button>
-          <button type="submit">Go</button>
+          <button type="submit">Log In</button>
       </form>
       </div>
     </div>
     <h2>or REGISTRATION</h2>
+    <div class="registrationFormDiv">
+    <form method="GET">
     <fieldset>
-    <input
+      <input
           placeholder="Write your Login"
+          name="Write your Login"
           type="text"
           minlength="3"
           maxlength="15"
           required
+          tabindex="1"
         />
       </fieldset>
+      <fieldset>
+        <input type="password" id="WriteYourPassword" name="WriteYourPassword" placeholder="Write your password" maxlength="10" onchange='confirmPass();' tabindex="2" required/>
+      </fieldset>
+      <fieldset>
+        <div class="confirmPassDiv">
+      <input type="password" id="ConfirmYourPassword" name="ConfirmYourPassword" placeholder="Confirm your password" maxlength="10" onchange='confirmPass();' tabindex="3" required/>    
+    </div>
+    </fieldset>
+    <fieldset>
+      <input type="email" name="Write your e-mail" placeholder="Write your e-mail" tabindex="4" required />
+    </fieldset>
+    <fieldset>
+      <input
+      type="tel"
+      name="Write your mobile number"
+      placeholder="Write your mobile number"
+      pattern="\+7\d{10}"
+      tabindex="5"
+      required
+    />
+  </fieldset>
+  <fieldset>
+    <legend>Choose Your Language</legend>
+    <select>
+        <option>RU</option>
+        <option>EN</option>
+      </select>
+  </fieldset>
+  <fieldset>
+    <input type="file" name="Your avatar" />
+  </fieldset>
+          <button type="submit" name="button submit" id="submitRegistrationForm">Registration</button>
+    </form>
+    </div>
+    <script src="./index.js"></script>
 
   </body>
 </html>
