@@ -1,36 +1,67 @@
+html,
 body {
-    background-color: rgb(40, 40, 49);
-    padding: 0px;
-    margin: 0px;
-    color: white;
-  }
-  h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-  }
-  h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-  }
-  .enterDiv {
-    margin-left: 0%;
-    width: 180px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .ButtonResetSubmit button {
-    border-radius: 6px;
-    margin: 2px;
-    width: 65px;
-    flex-wrap: wrap;
-  }
-  button:hover {
-    color: blue;
-  }
-  
+  background: #066b61;
+  background: -webkit-linear-gradient(top, #066b61, #e4e6e4);
+  background: -moz-linear-gradient(top, #066b61, #e4e6e4);
+  background: linear-gradient(to bottom, #066b61, #e4e6e4);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  margin: 0px;
+  padding: 5px;
+  height: 100%;
+}
+h1 {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+h2 {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+.enterDiv {
+  margin: 10px;
+  width: 180px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ButtonResetSubmit button {
+  border-radius: 6px;
+  margin: 8px;
+  width: 65px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+button:hover {
+  color: blue;
+  transition: 0.4s;
+}
+button:active {
+  background-color: rgb(154, 237, 172);
+  font-weight: bold;
+}
+fieldset {
+  border: none;
+  display: block;
+}
+.confirmPassBox {
+  box-shadow: red;
+}
+
+.registrationFormDiv button {
+  border-radius: 6px;
+  margin: 10px;
+  width: 180px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
